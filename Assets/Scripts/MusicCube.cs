@@ -8,6 +8,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class MusicCube : MonoBehaviour
 {
     private AudioSource audioSource;
+    private MoveToGoal moveScript;
     public int scoreIndex; 
     public float totalPlayTime = 0.0f;
 
@@ -16,11 +17,15 @@ public class MusicCube : MonoBehaviour
     public void Start()
     {
         audioSource = this.GetComponent<AudioSource>();
+        moveScript = gameObject.GetComponent<MoveToGoal>();
     }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log($"{audioSource.clip.name} - OnTriggerEnter: {other.GetType().ToString()} - {totalPlayTime.ToString()}");
-        if (other.GetType() != typeof(BoxCollider) && !audioSource.isPlaying)
+        if (other.GetType() == typeof(SphereCollider))
+        {
+            moveScript.Stun();
+        } else if (other.GetType() != typeof(BoxCollider) && !audioSource.isPlaying)
         {
             m_LastStartTime = Time.time;
             audioSource.Play();
@@ -32,7 +37,7 @@ public class MusicCube : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         Debug.Log($"{audioSource.clip.name} - OnTriggerExit: {other.GetType().ToString()} - {totalPlayTime.ToString()}");
-        if (other.GetType() != typeof(BoxCollider))
+        if (other.GetType() != typeof(BoxCollider) && other.GetType() != typeof(SphereCollider))
         {
             totalPlayTime += Time.time - m_LastStartTime;
             audioSource.Stop();
