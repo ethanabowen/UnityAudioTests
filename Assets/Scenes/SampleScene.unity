@@ -187,6 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreIndex: 3
   totalPlayTime: 0
+  currentScaleNote: 0
 --- !u!23 &112470424
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -273,11 +274,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c1ec3448b7396241b9349951a5b0351, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e228e2b649223eb4f988b964e0018d9f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -531,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreIndex: 0
   totalPlayTime: 0
+  currentScaleNote: 0
 --- !u!54 &305119433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -572,11 +574,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: acca123412425834bbf92d8ffeb3fdf3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e228e2b649223eb4f988b964e0018d9f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1381,6 +1383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreIndex: 2
   totalPlayTime: 0
+  currentScaleNote: 0
 --- !u!23 &1858544321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1467,11 +1470,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 941b78105a7cabe419e43c7263e7cb82, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e228e2b649223eb4f988b964e0018d9f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1625,6 +1628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreIndex: 1
   totalPlayTime: 0
+  currentScaleNote: 0
 --- !u!23 &2016808898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1711,11 +1715,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b0be89ff4c39b264d916fae365b6d38d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e228e2b649223eb4f988b964e0018d9f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
